@@ -6,6 +6,9 @@ body {
 
 img {
 	max-width: 100%;
+
+	
+
 }
 
 header {
@@ -15,6 +18,21 @@ header {
 	color: #fff;
 
 }
+
+ .header-img-1 {
+ 	
+ }
+
+ .header-img-2 {
+	position: absolute;
+	left: 59px;
+	top: 66px;
+	width: 395px;
+	height: 271px;
+	border-radius: 10px;	
+} 
+
+
 
 .header-pretitle {
 	margin-top: 102px;
@@ -191,10 +209,27 @@ footer {
 	}
 }
 
+@media (max-width: 1199px){
+	.header-img-2 {
+		position: absolute;
+		left: 54px;
+		top: 59px;
+		width: 350px;
+		height: 240px;
+		border-radius: 10px;	
+	} 
+	
+}
+
 @media (max-width: 992px) {
-	.header-img {
+	.header-img-1 {
 		display: none;
 	}
+
+	.header-img-2{
+		display: none;
+	}
+
 
 	.header-pretitle {
 		margin-top: 10px;
@@ -223,6 +258,16 @@ footer {
 }
 
 @media(max-width: 768px) {
+
+	/* .header-img-2 {
+		position: none;
+		left: 52px;
+		top: 56px;
+		width: 337px;
+		height: 232px;
+		border-radius: 10px;	 
+	} 
+	 */
 	.portfolio-col-1 {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -237,5 +282,6 @@ footer {
 	.footer-author, .footer-text {
 		text-align: center;
 	}
+
 	
 }
