@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+     min-height: 100vh;
+}
+
+.logo a{
+    font-family: 'Allura';
+    font-size: 36px;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+.logo:hover a {
+    text-decoration: none;
+    color: #ffff00;
+    font-weight: 400;
+} 
+
+ .nav-panel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    padding-top: 15px;
+}
+.nav-panel li {
+    display: inline;
+    padding-left: 25px;
+}
+.nav-panel a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+} 
+
+.nav-panel:hover a {
+    text-decoration: none;
+    border-radius: 25%;
+    
+}
+
+.text-header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-style: italic; 
+    margin-top: 150px;
+}
+
+.text-header-2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50p
+}
+
+.header-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #ffcc33;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* end header ------------------- */
+
+.section-title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.section-title p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    text-transform: initial;
+    color: #b6b6b6;
+    padding-bottom: 80px;
+}
+.section-img img{
+    margin-bottom: 15px;
+}
+.section-img-circle {
+  position: absolute;
+  left: 150px;
+  top: -25px;;
+    
+}
+.section-img-icon {
+    position: relative;
+    left: -2px;
+    top: -10px;
+    z-index: 2; 
+}
+
+.img-cont h4{
+    padding-top: 15px;
+}
+
+.img-cont  img{
+    width: 345px;
+    height: 325px;
+}
+
+.img-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.img-title-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: initial;
+    color: #b6b6b6;
+}
+
+.img-about {
+    position: relative;
+    left: 20px;
+}
+
+.about-text-right {
+    margin-left: 15px;
+}
+
+.block-about {
+    padding-bottom: 120px;
+} 
+
+.img-last-about {
+    width: 180px;
+    height: 180px;
+    background-color: #fed136;
+    border: 6px solid #f0eaea;
+    border-radius: 50%;
+}
+
+.img-last-about h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left: 2px;
+    top: 35px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.cirkle {
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.cirkle-text h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cirkle-text p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    text-transform: initial;
+}
+
+.cirkle-img-svg img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+}
+
+.cirkle-bot-text {
+    margin-top: 20px;
+}
+.button-send {
+   padding-top: 30px;
+   padding-bottom: 70px;
+   padding-left: 25px;
+}
+
+.footer-bi {
+    margin-top: 35px;
+    background-color: black;
+    background-image: url(../img/map-of-the-world-.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+} 
+footer input {
+   margin-bottom: 10px;
+}
+
+.footer-sicial {
+    margin-top: 20px;
+}
+
+.footer-sicial img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-sicial p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+
+@media (max-width: 1140px) {
+   .block-about{
+    padding-bottom: 100px;
+
+   }
+}
+
+@media (max-width: 992px) {
+    header {
+        min-height: 500px;
+    }
+    .text-header{
+        font-family: 'Roboto Slab', serif;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        font-style: italic; 
+        margin-top: 40px; 
+    }
+
+    .text-header-2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 45px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .nav-panel {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        list-style-type: none;
+    }
+
+    .section-img-circle {
+        position: absolute;
+        left: 80px;
+        top: -25px;;
+          
+    }
+    .section-img-icon {
+          position: relative;
+          left: -2px;
+          top: -10px;
+          z-index: 2; 
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .text-header{
+        font-family: 'Roboto Slab', serif;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        font-style: italic; 
+        margin-top: 40px; 
+    }
+
+    .text-header-2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 45px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .nav-panel {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        list-style-type: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-header{
+        font-family: 'Roboto Slab', serif;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        font-style: italic; 
+        margin-top: 40px; 
+    }
+
+    .text-header-2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 45px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .nav-panel {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        list-style-type: none;
+    }
+    .img-last-about,
+    .about img {
+        display: none;
+    }
+    
+}
