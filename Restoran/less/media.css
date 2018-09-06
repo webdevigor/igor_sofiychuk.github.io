@@ -1,0 +1,167 @@
+/* Landscape - телефоны */
+@media (min-width: 320px) and (max-width: 480px) {
+  .header-title {
+    display: none;
+  }
+  .header-btn {
+    margin-top: 0px;
+  }
+  .header-btn .btn-right {
+    margin-top: 25px;
+  }
+  .section-1 p {
+    margin-left: 0;
+  }
+  .section-1 .img-plate {
+    display: none;
+  }
+  .section-2 .ingredients {
+    width: 100%;
+  }
+  .section-2 .ingredients p {
+    margin: 0;
+  }
+  .section-2 .ingredients .ingredients-img {
+    width: 30%;
+  }
+  .section-3 .menu .spec {
+    transform: translateY(-23px) translateX(0px);
+  }
+  .section-3 .menu .special {
+    width: 100%;
+  }
+  .section-4 .reviews h3 {
+    font-size: 25px;
+    padding-top: 5%;
+  }
+  .section-4 .reviews p {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .section-4 .reviews small {
+    font-size: 14px;
+  }
+  .reserve h3 {
+    line-height: 1;
+  }
+  .reserve .img-menu {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 766px) {
+  .header-title {
+    display: none;
+  }
+  .section-1 p {
+    margin: 0;
+  }
+  .section-1 .img-plate {
+    display: none;
+  }
+  .section-2 .ingredients {
+    width: 100%;
+  }
+  .section-2 .ingredients p {
+    margin: 0;
+  }
+  .section-2 .ingredients .ingredients-img {
+    width: 30%;
+  }
+  .section-3 .menu .spec {
+    transform: translateY(-23px) translateX(0px);
+  }
+  .section-3 .menu .special {
+    width: 100%;
+  }
+  .section-4 .reviews h3 {
+    font-size: 35px;
+    padding-top: 5%;
+  }
+  .section-4 .reviews p {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .section-4 .reviews small {
+    font-size: 14px;
+  }
+}
+/* От портретного планшета до ландшафтного экрана и настольных дисплеев */
+@media (min-width: 767px) and (max-width: 990px) {
+  .header-title h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  .header-title img {
+    display: none;
+  }
+  .section-1 .img-cook {
+    padding: 25px 0 0 0;
+  }
+  .section-1 p {
+    margin: 0;
+  }
+  .section-1 .img-plate {
+    display: none;
+  }
+  .section-2 .ingredients {
+    width: 100%;
+  }
+  .section-2 .ingredients p {
+    margin: 0;
+  }
+  .section-2 .ingredients .ingredients-img {
+    width: 30%;
+  }
+  .section-3 .menu .spec {
+    transform: translateY(-23px) translateX(0px);
+  }
+  .section-3 .menu .special {
+    width: 100%;
+  }
+  .section-4 .reviews h3 {
+    font-size: 35px;
+    padding-top: 5%;
+  }
+  .section-4 .reviews p {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .section-4 .reviews small {
+    font-size: 14px;
+  }
+  /* .reserve {
+        .img-menu {
+            display: none;
+        }
+    } */
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .header-title h2 {
+    font-size: 44px;
+  }
+  .section-1 p {
+    margin: 0;
+  }
+  .section-2 p {
+    margin: 0;
+  }
+  .section-3 .menu .spec {
+    transform: translateY(-23px) translateX(0px);
+  }
+  .reserve h3 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .reserve .img-divider {
+    padding: 5px;
+  }
+  .reserve p {
+    padding: 0px;
+  }
+}
+/* Большой дисплей */
+@media (min-width: 1200px) {
+  .section-3 .menu .spec {
+    transform: translateY(-23px) translateX(1px);
+  }
+}
