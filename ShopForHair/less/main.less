@@ -1,0 +1,335 @@
+@text-header: rgb(184, 184, 184);
+@menu-burger:  rgb(177, 27, 27);
+@fon-color-black: rgb(21,21,21);
+@main-fon: rgb(119, 219, 250);
+body{
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+//Шапка 
+header {
+
+  background-color: @fon-color-black;
+  color: @text-header;
+  .logo {
+    padding-top: 0.6rem;
+    margin-bottom: .6rem;
+    width: 80px;
+    img {
+      
+      width: 100%;
+    }
+  }
+
+
+  .header-phone {
+    margin-top: 1.2rem;
+      a { 
+
+        &:hover, &:active, &:focus {
+          text-decoration: none;  
+      }
+        
+    }
+  }
+    
+  .nav-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    
+    margin-top: 0.7rem;
+    position: relative;
+    
+    .nav-line {
+      content: "";
+      display: block;
+      background-color: @menu-burger;
+      width: 20px;
+      height: 2px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+     
+    }
+    .nav-line::before {
+      content: "";
+      display: block;
+      background-color: @menu-burger;
+      width: 20px;
+      height: 2px;
+      position: relative;
+      transform: translateY(-5px);
+      
+    }
+    .nav-line::after {
+      content: "";
+      display: block;
+      background-color: @menu-burger;
+      width: 20px;
+      height: 2px;
+      position: relative;
+      transform: translateY(3px);
+      
+    }
+    
+  }
+  .nav-desctop {
+    .nav-block {
+      display: flex;
+      justify-content: end;
+      text-align: end;
+      margin-top: 0.6rem;
+  
+      li {
+        margin: 0.7rem;
+        list-style-type: none;
+  
+        a { 
+          color: @text-header;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          font-weight: 500;
+          &:hover {
+            text-decoration: none; 
+          }
+        }
+      }
+    }
+  }
+  .head-bascet {
+    margin-top: 1.2rem;
+    
+    width: 30px;
+    height: 30px; 
+    a {
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+} 
+
+.head-slider {
+  max-width: 100%;
+  overflow-x: hidden;
+  .sl-slider {
+    background-color: transparent;
+    z-index: 0;
+    .sl-img {
+      height: 60vh;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Filter
+.filter {
+  margin-top: 1rem;
+  input[type="checkbox"] {
+    display: none;
+    
+  }
+  input[type="checkbox"]:checked + label::before {
+    content: "";
+    background-image: url('../img/check-mark.png');
+    background-size: 100%;
+    
+  }
+  label {
+   
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      //background-color: #000;
+      vertical-align: middle;
+      margin-left: -10px;
+      margin-right: 10px;
+      transition: 0.3s;
+      
+    }  
+  }
+  
+  .filter-title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: @text-header;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid @fon-color-black;
+  }
+  .filter-category-title {
+    text-align: start;
+    width: 30%;
+    border-bottom: 1px solid black;
+  }
+  .filter-brand-title {
+    text-align: start;
+    width: 30%;
+    border-bottom: 1px solid black;
+  }
+  .btn-filter {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: @text-header;
+  }
+}
+
+
+
+
+//Товары
+main {
+
+  .goods {
+    display: flex;
+    flex-flow: row wrap; 
+    margin-top: 1rem;
+    
+  
+  
+    .cart {
+      width: 220px;
+      min-height: 300px;
+      margin: 0.7rem;
+      text-align: center;
+      background-color: #FFEBEE;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .add-to-cart {
+        margin: 0.6rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        width: 60%;
+        background-color: #FF8A80;
+        color:#263238;
+      }
+
+    }
+
+  }
+}
+
+
+//main-cart файл cart.html
+.main-cart {
+  display: flex;
+  //flex-direction: column;
+  .cart {
+    width: 200px;
+    min-height: 180px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+footer {
+  background-color: @fon-color-black;
+  padding-top: 1rem;
+  .footer-tittle {
+    border-bottom: 1px solid @menu-burger; 
+    margin-bottom: 1rem;
+    h3 {
+      
+      
+      text-align: center;
+      color: @text-header;
+      font-size: 2.4rem;
+    }
+  }
+
+  .footer-block-brand {
+    color: @menu-burger;
+    p {
+      display: block;
+      padding-left: 2.4rem;
+      text-align:left;
+      font-size: 1.4rem;
+    }
+    .footer-brads-item {
+      list-style-type: none;
+
+      li {
+        text-align: left;
+        a {
+          font-size: 1rem;
+          color: @text-header;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-block-category {
+    color: @menu-burger;
+    p {
+      display: block;
+      padding-left: 2.4rem;
+      text-align:left;
+      font-size: 1.4rem;
+    }
+    .footer-item-category {
+      list-style-type: none;
+
+      li {
+        font-size: 1rem;
+        text-align: left;
+        a {
+          color: @text-header;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-social {
+    
+    p {
+      a {
+        font-size: 1.6rem;
+        margin-right: 10px;
+        color: @menu-burger;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .block-social {
+      display: flex;    
+      width: 180px;
+      height: 160px;
+      
+      a{
+        display: block;
+        margin-right: 1rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+}
+
