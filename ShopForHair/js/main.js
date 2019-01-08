@@ -21,8 +21,10 @@ $("document").ready(function(){
   });
 
 
+
  
 });
+
 
 function filter() {
   $('input[type="checkbox"]').click(function() {
@@ -48,16 +50,21 @@ function goodsOut(data) {
       out += `<div class="cart" data-category='${data[key]['category']}' data-brand='${data[key]['brand']}'>`;
       out += `<p class="name" > ${data[key]['name']} </p>`;
       out += `<div> Цена: ${data[key]['cost']} </div>`;
-      out += `<img src="${data[key].img}">`;
+      out += `<a href='goods.php#${key}'><img src="${data[key].img}"> </a>`;
       out += `<button class="add-to-cart" data-id='${key}' >Купить </button>`;
+      /* out += `<button class="later" data-id='${key}' >&hearts;</button>`; */
+      
+      out += `<a href="#" class="later like" data-id='${key}'><img class="like-img" src="img/like.svg"> </a>`;
       out += '</div>';
       
     }
 
     $(".goods").html(out);
     $("button.add-to-cart").on("click", addToCart);
+    $(".later").on("click", addToLater);
     
-              //////Pagination//////      
+  function pagination() {
+                //////Pagination//////      
     //всего карт 
     /* function allCart () {
       let allCarts = 0;
@@ -133,6 +140,22 @@ function goodsOut(data) {
         $(".pagination li.current-page:eq(" + (currentPage - 1) + ")").addClass('active');
       }
     }); */
+  }
+}
+
+function addToLater(e) {
+  //добавляем товар в избраные, желания
+  e.preventDefault();
+  let later = {};
+  if(localStorage.getItem('later')) {
+    later = JSON.parse(localStorage.getItem('later'));
+  }
+  alert("Добавлено в желаемое");
+  let id = $(this).attr("data-id");
+  later[id] = 1;
+  localStorage.setItem('later', JSON.stringify(later));
+
+ 
 }
 
 function init() {

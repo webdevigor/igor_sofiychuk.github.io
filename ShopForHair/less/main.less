@@ -5,11 +5,13 @@
 body{
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
+  
 }
 //Шапка 
 header {
 
-  background-color: @fon-color-black;
+  background-color:  @fon-color-black;  
+
   color: @text-header;
   .logo {
     padding-top: 0.6rem;
@@ -81,7 +83,7 @@ header {
       justify-content: end;
       text-align: end;
       margin-top: 0.6rem;
-  
+      padding-left: 0;
       li {
         margin: 0.7rem;
         list-style-type: none;
@@ -99,15 +101,40 @@ header {
     }
   }
   .head-bascet {
-    margin-top: 1.2rem;
+    margin-top: 1rem;
     
-    width: 30px;
+    width: 40px;
     height: 30px; 
     a {
 
       img {
         width: 100%;
       }
+    }
+  }
+  .leater {
+    width: 45px;
+    max-height: 35px;
+    margin-top: .8rem;
+    a {
+      font-family:'Arial Narrow', Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: bold;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+      span {
+        display: block;
+        transform: translateY(-8px) translateX(2px);
+        
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+    }
+    img {
+      
+      width: 100%;
     }
   }
 
@@ -189,12 +216,30 @@ header {
 
 //Товары
 main {
+  min-height: 250px;
 
+  
   .goods {
     display: flex;
     flex-flow: row wrap; 
     margin-top: 1rem;
-    
+
+    .title-later {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      width: 100%;
+      min-height: 50vh;
+      
+      text-align: center;
+      a {
+        font-size: 4rem;
+        color: #263238;
+        
+        &:hover {
+          text-decoration: none;
+          color: #263238;
+        }
+      }
+    }
   
   
     .cart {
@@ -207,25 +252,46 @@ main {
       img {
         width: 100%;
       }
+      .like {
+        position: absolute;
+        right: 6px;
+        bottom: 8px;
+        width: 28px;
+        height: 28px;
+        .like-img {
+          width: 100%;
+          
+        }
+       
+      }
       .add-to-cart {
         margin: 0.6rem;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 1.1rem;
+        font-weight: 700;
         border: none;
         width: 60%;
         background-color: #FF8A80;
         color:#263238;
+        border-radius: 5%;
+        transition-duration: 1s;
+        &:hover {
+          color: rgb(255, 255, 255);
+          background-color: rgb(61, 13, 13);
+          transform: rotate(360deg);
+        }
       }
 
     }
-
+    
   }
+  
 }
 
 
 //main-cart файл cart.html
 .main-cart {
   display: flex;
+  min-height: 200px;
   //flex-direction: column;
   .cart {
     width: 200px;
@@ -241,6 +307,7 @@ main {
 
 
 footer {
+  flex: 0 0 auto; 
   background-color: @fon-color-black;
   padding-top: 1rem;
   .footer-tittle {

@@ -57,7 +57,7 @@ function mainShowCart() {
 }
 
 function downGoods() {
-  //умуньшаем количество данного товара в корзине
+  //уменьшаем количество данного товара в корзине
   let id = $(this).attr("data-id");
  
     
@@ -88,10 +88,9 @@ function delGoods() {
   mainShowCart();
 }
 
-function saveCart(obj) {
+function saveCart(cart) {
   //сохр. корзину в localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
-  //console.log(cart);
 }
 
 function sendEmail() {

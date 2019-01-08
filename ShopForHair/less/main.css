@@ -63,6 +63,7 @@ header .nav-desctop .nav-block {
   justify-content: end;
   text-align: end;
   margin-top: 0.6rem;
+  padding-left: 0;
 }
 header .nav-desctop .nav-block li {
   margin: 0.7rem;
@@ -78,11 +79,34 @@ header .nav-desctop .nav-block li a:hover {
   text-decoration: none;
 }
 header .head-bascet {
-  margin-top: 1.2rem;
-  width: 30px;
+  margin-top: 1rem;
+  width: 40px;
   height: 30px;
 }
 header .head-bascet a img {
+  width: 100%;
+}
+header .leater {
+  width: 45px;
+  max-height: 35px;
+  margin-top: .8rem;
+}
+header .leater a {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+header .leater a:hover {
+  text-decoration: none;
+  color: black;
+}
+header .leater a span {
+  display: block;
+  transform: translateY(-8px) translateX(2px);
+  color: #ffffff;
+  text-align: center;
+}
+header .leater img {
   width: 100%;
 }
 .head-slider {
@@ -145,10 +169,27 @@ header .head-bascet a img {
   font-size: 1.3rem;
   color: #b8b8b8;
 }
+main {
+  min-height: 250px;
+}
 main .goods {
   display: flex;
   flex-flow: row wrap;
   margin-top: 1rem;
+}
+main .goods .title-later {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100%;
+  min-height: 50vh;
+  text-align: center;
+}
+main .goods .title-later a {
+  font-size: 4rem;
+  color: #263238;
+}
+main .goods .title-later a:hover {
+  text-decoration: none;
+  color: #263238;
 }
 main .goods .cart {
   width: 220px;
@@ -161,17 +202,35 @@ main .goods .cart {
 main .goods .cart img {
   width: 100%;
 }
+main .goods .cart .like {
+  position: absolute;
+  right: 6px;
+  bottom: 8px;
+  width: 28px;
+  height: 28px;
+}
+main .goods .cart .like .like-img {
+  width: 100%;
+}
 main .goods .cart .add-to-cart {
   margin: 0.6rem;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 700;
   border: none;
   width: 60%;
   background-color: #FF8A80;
   color: #263238;
+  border-radius: 5%;
+  transition-duration: 1s;
+}
+main .goods .cart .add-to-cart:hover {
+  color: #ffffff;
+  background-color: #3d0d0d;
+  transform: rotate(360deg);
 }
 .main-cart {
   display: flex;
+  min-height: 200px;
 }
 .main-cart .cart {
   width: 200px;
@@ -184,6 +243,7 @@ main .goods .cart .add-to-cart {
   width: 100%;
 }
 footer {
+  flex: 0 0 auto;
   background-color: #151515;
   padding-top: 1rem;
 }
